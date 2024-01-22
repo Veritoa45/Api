@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Tienda de agendas</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="../img/Logo.png" alt="Logo" class="logo" />
+        </div>
+    </header>
+    <div class="linea"></div>
+    <main>     
+        <h1>Registrate</h1>
+        <form id="register">
+            <fieldset class="registrate">
+                <div class="fila">
+                    <label for="firstName">Nombre</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Ingrese su nombre">
+                </div>
+                <div class="fila">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Ingrese su apellido">
+                </div>
+                <div id="response"></div>
+                <div class="fila">
+                    <label for="userName">Usuario</label>
+                    <input type="text" name="userName" id="userName" placeholder="Ingrese su usuario">
+                </div>
+                <div class="fila">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+                </div>
+                <button type="submit" class="ingresar">Registrate</button>
+            </fieldset>
+            <br>
+            <br>
+        </form>
+        <div class="linea2"></div>
+    </main>
+    <footer>
+        <div class="fit">
+            <img src="../img/Logo.png" alt="Logo">
+        </div>
+        <div class="datos">
+            <p>Av. Alvarez Thomas 2617</p>
+            <p>CABA</p>
+        </div>
+        <div class="contacto">
+            <h2>Contactanos</h2>
+            <p>11-4444-9999</p>
+        </div>
+    </footer>
+    <script src="../js/register.js"></script>
+</body>
+</html>

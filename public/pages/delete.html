@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Tienda de agendas</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="../img/Logo.png" alt="Logo" class="logo" />
+        </div>
+        <div>
+            <h2>Bienvenido, Administrador!</h2>
+        </div>
+        <div id="logout"><img src="../img/logout.png" alt="salir" id="salir"/></div>
+    </header>
+    <div class="linea"></div>  
+    <main>
+        <h1>Eliminar un producto</h1>
+        <form id="delete">
+            <fieldset class="delete">
+                <div class="fila">
+                    <label for="title">Título</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <br>
+                <div id="response"></div>
+                <br>
+                <div class="fila">
+                    <button type="submit">Eliminar</button>
+                </div>    
+            </fieldset>
+        </form>
+        <br>
+
+        <div class="linea2"></div>
+    </main>
+    <footer>
+        <div class="fit">
+            <img src="../img/Logo.png" alt="Logo">
+        </div>
+        <div class="datos">
+            <p>Av. Alvarez Thomas 2617</p>
+            <p>CABA</p>
+        </div>
+        <div class="contacto">
+            <h2>Contactanos</h2>
+            <p>11-4444-9999</p>
+        </div>
+    </footer>
+    <script src="../js/delete.js" type="module"></script>
+    <script src="../js/logout.js"></script>
+</body>
+</html>

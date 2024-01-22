@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Tienda de agendas</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="../img/Logo.png" alt="Logo" class="logo" />
+        </div>
+        <div>
+            <h2>Bienvenido, Administrador!</h2>
+        </div>
+        <div id="logout"><img src="../img/logout.png" alt="salir" id="salir"/></div>
+    </header>
+    <div class="linea"></div>  
+    <main>
+        <h1>Agregar un nuevo producto</h1>
+        <form id="create" enctype="multipart/form-data">
+            <fieldset class="create">
+                <div class="fila">
+                    <label for="title">Título</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="fila">
+                    <label for="description">Descripción</label>
+                    <input type="text" name="description" id="description">
+                </div>
+                <div class="fila">
+                    <label for="price">Precio</label>
+                    <input type="number" name="price" id="price">
+                </div>
+                <div class="fila">
+                    <label for="stock">Stock</label>
+                    <input type="number" name="stock" id="stock">
+                </div>
+                <div class="fila">
+                    <label for="thumbnail">Imagen</label>
+                    <input type="file" name="thumbnail" id="thumbnail">
+                </div>
+                <div class="fila">
+                    <label for="category">Categoría</label>
+                    <select name="category" id="category" size="1">
+                        <option value="Perpetua">Perpetua</option>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Diaria">Diaria</option>
+                    </select>
+                </div>
+                <div id="response"></div>
+                <div class="fila">
+                    <button type="submit">Enviar</button>
+                </div>    
+            </fieldset>
+        </form>
+        <div class="linea2"></div>
+    </main>
+    <footer>
+        <div class="fit">
+            <img src="../img/Logo.png" alt="Logo">
+        </div>
+        <div class="datos">
+            <p>Av. Alvarez Thomas 2617</p>
+            <p>CABA</p>
+        </div>
+        <div class="contacto">
+            <h2>Contactanos</h2>
+            <p>11-4444-9999</p>
+        </div>
+    </footer>
+    <script src="../js/create.js" type="module"></script>
+    <script src="../js/logout.js"></script>
+</body>
+</html>

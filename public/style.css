@@ -1,0 +1,476 @@
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 100px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+#inicio, #salir, #carro {
+    width: 40px;
+}
+
+.btn-abrir-modal, #salir {
+    cursor: pointer;
+}
+
+.modal {
+    margin: 20% 30%;
+    height: 120px;
+    background-color: rgb(48, 48, 48);
+    border: 3px solid;
+    border-color: rgba(211, 211, 211, 0.82);
+    border-radius: 10px;
+}
+
+.btn-reg-modal, .btn-log-modal {
+    width: 150px;
+    height: 45px;
+    margin: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(48, 48, 48);
+    border: 3px solid;
+    border-color: rgba(211, 211, 211, 0.82);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.linea {
+    border-top: 3px solid rgb(251, 143, 246);
+    height: 2px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.linea2{
+    border-top: 3px solid rgb(251, 143, 246);
+    height: 2px;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 25px;
+}
+
+/* Cuerpo de la página*/
+
+h1 {
+    margin: 20px 0;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+}
+
+#agendas-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agenda-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5% auto 0;
+    width: 30%;
+    padding: 2%;
+    border: 2px solid rgb(211, 211, 211);
+    box-shadow: 2px 2px 8px 4px rgba(254, 148, 148, 0.82);
+    border-radius: 2%;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.descripcion {
+    font-size: 16px;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.agenda {
+    width: 90%;
+    margin: 10px auto;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 2%;
+}
+
+.fit img {
+        max-width: 250px;
+}
+
+.datos p {
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.contacto h2 {
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 1.7rem;
+    text-align: right;
+}
+
+.contacto p {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+/* Inicio de Sesión */
+
+form {
+    margin: auto;
+}
+
+fieldset {
+    font-size: 20px;
+    margin: 15px auto 10px;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgb(211, 211, 211);
+    box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.82);
+    padding: 20px;
+}
+
+label {
+    padding: 15px;
+}
+
+input {
+    font-size: 20px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input:hover {
+    background-color: rgb(253, 141, 141);
+    color: black
+}
+
+.ingresar {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 30px auto;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.82);
+}
+
+.registro {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.registro a {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+/* Formulario de Registro */
+
+#register {
+    width: 60%;
+}
+
+.registrate {
+    margin: 30px auto 0;
+    padding: 40px;
+    width: 70%;
+    height: 550px;
+    gap: 20px
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 8px;
+}
+
+.fila input {
+    width: 350px;
+}
+
+#response {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgb(191, 2, 181);
+    width: 350px;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+}
+
+/* Cliente */
+
+.cliente {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Administrador */
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#crearProducto, #modificarProducto, #eliminarProducto {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.82);
+}
+
+#crearProducto, #modificarProducto, #eliminarProducto :hover{
+    cursor: pointer;
+}
+
+/* Crear, Modificar y Eliminar Productos */
+
+.create, .update, .delete {
+    margin: auto;
+    height: auto;
+}
+
+button {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 30px auto;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.82);
+}
+
+#category {
+    width: 350px;
+    font-size: 1.3rem;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    .modal {
+        margin: auto;
+        width: 40%;
+    }
+    
+    .btn-reg-modal, .btn-log-modal {
+        width: 30%;
+        padding: 5px;
+        margin: 5% 8%;
+        font-size: 16px;
+    }
+        
+    .fit img {
+        max-width: 200px;
+    }
+
+    .datos p {
+        font-size: 1rem;
+    }
+
+    .contacto h2 {
+        font-size: 1.3rem;
+    }
+
+    .contacto p {
+        font-size: 1rem;
+    }
+
+    #register {
+        width: 80%;
+    }
+    
+    .registrate {
+        margin: 10% auto 0;
+        height: auto;
+        gap: 10%;
+    }
+    
+    #response {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .modal {
+        margin: auto;
+        width: 40%;
+        height: 160px;
+    }
+
+    .btn-reg-modal, .btn-log-modal {
+        width: 80%;
+        padding: 5%;
+        margin: 8% 8%;
+        font-size: 14px;
+    }
+
+    .precio {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }  
+
+    .datos p {
+        font-size: 1rem;
+    }
+
+    .contacto h2 {
+        font-size: 1.3rem;
+    }
+
+    .contacto p {
+        font-size: 1rem;
+    }
+
+    #create, #update, #delete{
+        width: 90%;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    #register {
+        width: 100%;
+    }
+    
+    .registrate {
+        margin: 10% auto 0;
+        height: auto;
+        gap: 10%;
+    }
+    
+    #response {
+        width: 80%;
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .fila input {
+        width: 100%;
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+
+    #category {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    #crearProducto, #modificarProducto, #eliminarProducto {
+        font-size: 16px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .create, .update, .delete, #login {
+        width: auto;
+        height: auto;
+    }
+
+    button {
+        width: 40%;
+    }
+
+    .cliente img {
+        margin: auto 20px;
+    }
+}
